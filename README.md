@@ -49,3 +49,5 @@ Interface also provides the following functionality:
     * Proposed Name: VOL_DPS_TERM_DEPOSIT_AMOUNT_TL
     * Field Name: TERM_DEPOSIT, count(distinct IP_ID)
     * Proposed Name: VOL_DPS_TERM_DEPOSIT_NUM_CUSTOMER
+* Incremental load options
+  * users can define queries to define incremental load subsets (```select date from calendar t1 join source t2 where t2.key_field is null```) 

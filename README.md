@@ -16,6 +16,11 @@ Interface also provides the following functionality:
     * q-binning, log transformation, min-max scaling, standart scaling
     * imputation without modifying original data (org: FIELD1, imp: FIELD1_IMP0)
     * all transformations are no code ready to use, user can select by just clicking
+  * Anomaly detection on fields
+    * IQR testing
+    * Background co-existance controls
+  * Simple on-the-go clustering with one click
+  * One time calculatin, public fields can be reuasable, (strict documentation required)
 * Post field generation
   * Existing fields: FIELD1, FIELD2
   * Post fields: round(FIELD1/FIELD2,3) as FIELD1_SOW

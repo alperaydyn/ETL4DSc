@@ -33,5 +33,5 @@ Interface also provides the following functionality:
   * for specific tasks or one time projects create static views 
   * ready to re-run and reproduce up-to-date versions 
 * tree based sub reports generated from source etl job
- * naming of sub reports: JOB123.Analyze1, JOB123.Analyze2
- * each report automatically updates when to source table is reloaded, unless Analyze is protected, if so a new copy is produced as a new version
+  * naming of sub reports: JOB123.Analyze1, JOB123.Analyze2
+  * each report automatically updates when to source table is reloaded, unless Analyze is protected, if so a new copy is produced as a new version

@@ -40,3 +40,12 @@ Interface also provides the following functionality:
   * **parallelization**: split data with partitions or indexes in the source table, auto retrieve this information from db 
   * **load balancing**: propose better schedule times to reduce overall running time
   * **merge similar jobs**: merge or extend similar jobs from different users and generate the same field only for once.
+* Naming conventions
+  * Provide field name proposals supporting the enterprise conventions
+  * Define prefixes for each entity and table name to automatically add suffix added column names in joins
+    * Entity Name: VOLUMES, suffix: VOL_
+    * Table Name: DEPOSITS, suffix: DPS_
+    * Field Name: TERM_DEPOSIT, calculation sum(case when CURRENCY='TL' ), 
+    * Proposed Name: VOL_DPS_TERM_DEPOSIT_AMOUNT_TL
+    * Field Name: TERM_DEPOSIT, count(distinct IP_ID)
+    * Proposed Name: VOL_DPS_TERM_DEPOSIT_NUM_CUSTOMER

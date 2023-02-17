@@ -3,7 +3,7 @@
 This project provides an interface for business teams to manage ETL processes that enables reporting and data science solutions.
 
 Interface also provides the following functionality:
-* easy to use etl jobs definition and scheduling
+* easy etl job creation and scheduling
 * job based definition and documentation (who created, for which tasks, reports, projects, etc)
 * generation of new columns for existing tables (inheriting existing jobs to create additional columns for already existing jobs)
   * JOB123 > KEY_FIELD1, KEY_FIELD2, FIELD3, FIELD4
@@ -29,3 +29,9 @@ Interface also provides the following functionality:
   * ready to use simple rules that user can enable with a single click
   * auto generated complex rules from calculated fields
   * quality result monitoring with minimum indicators, included in field documentation
+* temporary materialized views and archiving snapshots
+  * for specific tasks or one time projects create static views 
+  * ready to re-run and reproduce up-to-date versions 
+* tree based sub reports generated from source etl job
+ * naming of sub reports: JOB123.Analyze1, JOB123.Analyze2
+ * each report automatically updates when to source table is reloaded, unless Analyze is protected, if so a new copy is produced as a new version
